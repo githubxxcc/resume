@@ -1,0 +1,303 @@
+%-------------------------
+% Resume in Latex
+% Author : XU Chen 
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeLine}[1]{
+  \item\small{
+    #1 \vspace{-2.5pt}
+  }
+}
+
+\newcommand{\resumeSubheadingSingle}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}rr}
+    \textbf{\href{https://githubxxcc.github.io}{\huge Ricky Chen XU}} & \href{mailto:xuchen727@hotmail.com}{xuchen727@hotmail.com} & +1 (412) 680-8741\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Carnegie Mellon University, School of Computer Science}{Pittsburgh, PA}
+      {Master of Science in Computer Science}{ Now -- Dec. 2020}
+      \resumeItemListStart
+      \resumeItem{QPA: 4.09/4.33}
+      {Introduction to Computer System (A), Introduction to Database System (IP), Distributed System (IP), Storage System (IP)}
+      \resumeItemListEnd
+    \resumeSubheading
+    {National University of Singapore, School of Computing}{Singapore}
+      {Bachelor of Science in Computer Science with Honours , University Scholars Program}{Aug. 2015 -- June. 2019}
+      \resumeItemListStart
+        \resumeItem{Major GPA:3.86/4.00 (4.83/5.00)} {Algorithms for Distributed Systems, Concurrent and Parallel Programming, Advanced Operating System, Computer Networks, Computer Security, Randomized Algorithms}
+        \resumeItem{Teaching Assistant} 
+        {CS1010J Programming Methodology in Java , CS1010E Programming Methodology in C} 
+        \resumeItem{Dean's List} {Top 5\% of the School of Computing} 
+      \resumeItemListEnd
+    \resumeSubheading
+      {Stanford University}{Palo Alto, CA}
+      {Summer International Honors Program , Intensive Certificate in Computer Science}{June. 2016 -- Aug. 2016}
+      \resumeItemListStart
+        \resumeItem{Silicon Valley Innovation Academy}{Final round projects candidate}
+        \resumeItem{Classes} {Design and Analysis of Algorithms, Advanced Topics in Operating System}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Facebook}{Menlo Park, CA}
+      {Production Engineering Intern}{May 2020 - Now}
+      \resumeItemListStart
+      \resumeItem{Presto Team}
+      {
+         Rewriting queries replayer framework for performance testing and correctness verification.
+      }
+      \resumeItemListEnd
+    \resumeSubheading
+      {GIC Private Inc}{Singapore, Singapore}
+      {Quantitative Research Intern (Part-time)}{March 2019 - July 2019}
+      \resumeItemListStart
+      \resumeItem{Term Premium Model} 
+      {Implemented 2 affine term premium models based on papers from Kim et al (2005), and  Hamilton et al (2008). (Python, Kalman filter, Statespace Model)}
+      \resumeLine {Produced comparable results with those presented in the paper, and improved the current term premium prediction model used in daily trading strategy at GIC.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sensetime Inc}{Singapore, Singapore}
+      {Software Engineering Intern}{Jan 2019 - May 2019}
+      \resumeItemListStart
+      \resumeItem{Sequence-to-sequence Model}
+      { Built sequence-to-sequence network for chip recognition task (mAP $\geq$ 93.1\%), contributed to the development of object tracking system using neural networks.(60K+ lines of code project in C++)}
+      \resumeItem{VAE Research} 
+      {Proposed the decoupling of intra-class variation for better representation modeling. The proposed model performs better than state-of-the-art methods. The work is currently under review for ECCV 2020. (Python, PyTorch)}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Microsoft Research in Asia}{Beijing, China}
+      {Research Intern, Star of Tomorrow Program}{June 2018 - Aug 2018}
+      \resumeItemListStart
+      \resumeItem{Non-Volatile Memory(NVM)}
+      {Worked closely with Associate Researcher \href{https://www.microsoft.com/en-us/research/people/jinren/}{Jinglei Ren} as a research assistant. Designed and proposed algorithms for applications working with NVM on multi-core systems. (Rust, multithreading, NVM)}
+      \resumeItem{Database System} 
+      {Built a transactional interface in Rust that outperforms previous works by more than 30\% for OLTP database applications on TPC-C workload.
+      }
+      \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {Naya Health Inc}{Redwood City, USA}
+    %  {Product Management Intern }{June 2017 - Nov 2017}
+    %  \resumeItemListStart
+    %    \resumeItem{Alexa App Deisgn/Development}
+    %      {Designed, and drafted product proposal for the Alexa App. Created and published a Naya Guru Alexa application on the store for concept prototyping}
+    %    \resumeItem{Naya iOS Mobile Application Upgrade}
+    %    {Worked closely with iOS developer to come up with new features: Progress Recorder, Mom Loop Social Community. Double monthly user retention rate from 14\% to 30\%, increased average user activity per week by 33\%.}
+    %     \resumeItem{Alexa App}
+    %      {Created and published a Naya Guru Alexa application on the store for concept prototyping}
+    %  \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {Naya Health Inc}{Redwood City, USA}
+    %  {Fullstack Enginering Intern} {Feb 2017 - May 2017}
+    %  \resumeItemListStart 
+    %    \resumeItem{Data Engineering}
+    %      {Designed data schema for usage data collection, conducted research into databases design and choices, built data pipe-lining that collects data from Firebase, RealmDB, test stations' PCs, to MongoDB}
+    %    \resumeItem{Data Visualization}
+    %      {Built internal data dashboard that supports $\geq$ 50 MongoDB queries, reported usage data to the management team regularly and monitored errors for the hardware engineering teams}
+    %    \resumeItem{Operation Infrastructure Solution}
+    %      {Built automated shipment tracking tool for the operation team, that reduces the time for printing shipment labels from hours to just a few minutes.}
+    %    \resumeItem{Website Development}
+    %    {Created website page for the subscription program, built APIs for user management and external software (Stripe, Shopify) integration, and maintained the company website. (AngularJS + Jekyll)}
+    %  \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {NUS Investment Club}{Singapore, Singapore}
+    %  {Executive Analyst}{June 2015 - Aug 2016}
+    %  \resumeItemListStart
+    %  \resumeItem{Fundamental Analysis Group}
+    %  {
+    %      Conducted market research for Asia's Real Estate market, Rubber Products market. Written equity research report for Riverstone Holding, and JD.com, and both hit price targets within 6 months.
+    %  }
+    %  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects and Research}
+\resumeSubHeadingListStart
+    % \resumeSubheadingSingle
+    % {N-Body Simulation}{Class Project, Jan 2018} 
+    % \resumeItemListStart
+    % \resumeLine{Built N-Body Simulation that supports both elastic bounce-off and pass-through collision handling. (C)}
+    % \resumeLine{Used OpenMPI to coordinate distributed computing and communication, GNU Multiple Precision Arithmetic (GMP) to improve accuracy in parallel computing.}
+    % \resumeItemListEnd
+
+
+    %\resumeSubItem{N-Body Simulation [\href{https://github.com/githubxxcc/n-body-simulation/tree/master/src}{Code}][\href{https://github.com/githubxxcc/n-body-simulation/blob/master/Report.pdf}{Report}]}
+    %\\{\vspace{8pt}}
+    %\resumeSubItem{Competitive Auction Research[\href{https://github.com/githubxxcc/project-reports/blob/master/Competitive_Auction_Summary.pdf}{Report1}] [\href{https://github.com/githubxxcc/project-reports/blob/master/Competitive_Auction_Extension.pdf}{Report2}]}
+    %\\{\vspace{8pt}The project summarizes the paper \textit{Competitive Auction} by Andrev V. Goldberge et al, and proposes extensions to the original paper.}
+    %\resumeSubItem{Device Fingerprinting for Web Applications[\href{https://github.com/cs3235-autoauth/report/blob/master/v1.paper.pdf}{Report}]}
+    %\\{\vspace{8pt} Conducted research in the device fingerprinting technology, in particular, its usage as a augmentation to the authentication process for web applications. Built a Web authentication workflow to demonstrate the use of device fingerprinting as a primary method for user authentication.}
+    %\resumeSubItem{Backoff Protocol Research [\href{https://github.com/githubxxcc/project-reports/blob/master/Backoff_Protocol.pdf}{Report}]}
+    %\\{\vspace{8pt}The experiment investigates the performance of various backoff protocols in contention resolution with different arrival models. By adding in a bit of randomization at various components of the protocol, one can share resources effectively.}
+
+    \resumeSubheadingSingle
+    {CMU Terrier(https://github.com/cmu-db/terrier/pull/862)}{Class Project, May 2020} 
+    \resumeItemListStart
+    \resumeLine{Added lazy schema change functionality, adapted the entire pipeline (parser, binder, optimizer, planner, execution, and storage) to support simple ALTER TABLES commands like adding columns, dropping columns, changing column type. In addition, data is migrated to the new schema in a lazy fashion to minimize concurrent schema change overhead }
+    \resumeItemListEnd
+
+    \resumeSubheadingSingle
+    {API World Hackathon, Best API Winner} {Hackathon, Nov 2018}
+    \resumeItemListStart
+    \resumeLine{Built a bike-sharing application with the HyperTrack APIs, that has an Android mobile App with WebApp dashboard. Mainly in charge of dashboard development.}
+    \resumeItemListEnd
+
+
+    % \resumeSubheadingSingle
+    % {MapReduce Library in Go}{Class Project, May 2018} 
+    % \resumeItemListStart
+    % \resumeLine{Implemented MapReduce library in Go, that handles worker failures and supports iterative workload. Uses the library to implement PageRank, Inverted Index, and wordcount examples.}
+    % \resumeItemListEnd
+
+    \resumeSubheadingSingle
+    {PintOS}{Personal Project, April 2018} 
+    \resumeItemListStart
+    \resumeLine{Completed the first two phases of Stanford's Operation System class project individually. (Usually in a group of 4)}
+    \resumeLine{Built Multilevel Queue (MLQ) scheduler, implemented system calls, implemented file descriptor managers (C).}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C++, Go, C, Rust, SQL,Javascript, Python, Java}
+      \hfill
+      \textbf{Technologies}{: Linux, PyTorch, AWS}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+% \section{Online Classes}
+%     \resumeSubHeadingListStart
+%      \item{
+%              \textbf{Design and Analysis of Algorithms}, MIT OpenCourseware, 80\% lectures and selected assignments.
+%     }
+%      \item{
+%              \textbf{Operating Systems}, Stanford Lecture Notes, all lectures and first half of the project.
+%     }
+%      \item{
+%              \textbf{Introduction to Database}, Stanford Online Lagunita.
+%     }
+%      \item{
+%              \textbf{Introduction to Computer Networking}, Stanford Online Lagunita.
+%     }
+%     \item{
+%             \textbf{Parallel, Concurrent, and Distributed Programming in Java}, Rice on Coursera, completed specialization
+%     }
+%     \item{
+%             \textbf{Advanced Javascript}, Udemy, completed class.
+%     }
+%     \item {
+%         \textbf{Cryptography I}, Stanford on Coursera, completed class.
+%     }
+%     \item {
+%         \textbf{Computer Systems Security}, MIT OpenCourseware, 80\% course lectures and first 2 labs.
+%     }
+%     \item {
+%         \textbf{Introduction to Classical Music}, Yale on Coursera, completed class.
+%     }
+%     \item {
+%         \textbf{Financial Market}, Yale on Coursera, completed class.
+%     }
+%     \item {
+%         \textbf{The Global Business of Sports}, UPenn on Coursera, completed class.
+%     }
+%     \item {
+%         \textbf{Machine Learning}, Stanford on Coursera, ongoing.
+%     }
+%     \resumeSubHeadingListEnd
+\end{document}

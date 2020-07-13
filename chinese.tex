@@ -1,0 +1,303 @@
+%-------------------------
+% Resume in Latex
+% Author : XU Chen 
+% License : MIT
+%------------------------
+
+\documentclass[UTF8,letterpaper,11pt]{ctexart}
+
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeLine}[1]{
+  \item\small{
+    #1 \vspace{-2.5pt}
+  }
+}
+
+\newcommand{\resumeSubheadingSingle}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}rr}
+    \textbf{\href{https://githubxxcc.github.io}{\huge 许宸}} & \href{mailto:xuchen727@hotmail.com}{xuchen727@hotmail.com} & +1 (412) 680-8741\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{学习经历}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {卡耐基梅隆大学, 计算机学院}{匹兹堡, 美国}
+      {计算机科学硕士}{  现在 -- 2020.12.1}
+      \resumeItemListStart
+      \resumeItem{学分: 4.00/4.00}
+      {重点课程： 计算机架构，机器学习， 强化学习，数据库，分布式系统，云计算}
+      \resumeItemListEnd
+    \resumeSubheading
+    {新加坡国立大学，计算机学院}{新加坡}
+      {计算机本科荣誉学位 , 优秀学者项目}{2015.08 -- 2019.06}
+      \resumeItemListStart
+        \resumeItem{学分：3.86/4.00, 排名: 前3 } { 助教: 计算机编程-C， 计算机编程-Java}
+        \resumeItem{院长奖} {多届院长奖（前百分之五）获得者} 
+      \resumeItemListEnd
+    \resumeSubheading
+      {斯坦福大学}{美国}
+      {夏季计算机集训项目，全球精英计划}{2016.06 -- 2016.08}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{实习工作经历}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Facebook }{美国}
+      {平台工程师实习}{现在 - 2020.09 （研一）}
+      \resumeItemListStart
+      \resumeItem{ Presto 大数据平台}
+      {
+          重新编写Presto的性能测试框架（进行中）
+      }
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {新加坡政府投资公司}{新加坡}
+      {量化投资算法实习生}{2019.03 - 2019.07 （大四）}
+      \resumeItemListStart
+      \resumeItem {仿射期限结构模型}
+      { 根据论文的理论，实现了2个基于卡尔曼滤波(Kalman Filter) 的期货价格仿射期限结构模型( Affine Term Structure Model)。 复现的模型不仅论证了论文中的理论，并且提升了交易部门基于期货价格的交易策略。}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {商汤科技}{新加坡}
+      {算法工程师实习}{2019.01 - 2019.05 （大四）}
+      \resumeItemListStart
+      \resumeItem { 识别任务} {
+      搭建序列对序列模型(sequence-to-sequence) 来完成赌场筹码识别任务，提升mAP从80 到93.1. 并且参与到端对端的算法落地项目中（6万行代码的代码库）.}
+      \resumeItem { 行人再识别} {
+      提出了类内方差分离的技术，改进对于行人再识别模型提取特征的能力。搭建模型达到state-of-the-art的标准。}
+      \resumeItemListEnd
+    \resumeSubheading
+      {微软亚研院}{北京，中国}
+      {研究实习生，明日之星项目}{2018.06 - 2018.08 （大三）}
+      \resumeItemListStart
+      \resumeItem
+      { 非易失性内存(Non-Volatile Memory)算法研究} {
+      提出并实现针对非易失性内存的多线程算法。}
+      \resumeItem
+      { 数据库搭建} {
+          独立编写多线程优化的数据库存储模块，在TPCC测试环境下，比之前的论文中的系统性能更快（30\%）。（但由于和因特尔的保密协议，研究成果暂时无法通过开源或者论文形式分享） 
+      }
+      \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {Naya Health Inc}{Redwood City, USA}
+    %  {Product Management Intern }{June 2017 - Nov 2017}
+    %  \resumeItemListStart
+    %    \resumeItem{Alexa App Deisgn/Development}
+    %      {Designed, and drafted product proposal for the Alexa App. Created and published a Naya Guru Alexa application on the store for concept prototyping}
+    %    \resumeItem{Naya iOS Mobile Application Upgrade}
+    %    {Worked closely with iOS developer to come up with new features: Progress Recorder, Mom Loop Social Community. Double monthly user retention rate from 14\% to 30\%, increased average user activity per week by 33\%.}
+    %     \resumeItem{Alexa App}
+    %      {Created and published a Naya Guru Alexa application on the store for concept prototyping}
+    %  \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {Naya Health Inc}{Redwood City, USA}
+    %  {Fullstack Enginering Intern} {Feb 2017 - May 2017}
+    %  \resumeItemListStart 
+    %    \resumeItem{Data Engineering}
+    %      {Designed data schema for usage data collection, conducted research into databases design and choices, built data pipe-lining that collects data from Firebase, RealmDB, test stations' PCs, to MongoDB}
+    %    \resumeItem{Data Visualization}
+    %      {Built internal data dashboard that supports $\geq$ 50 MongoDB queries, reported usage data to the management team regularly and monitored errors for the hardware engineering teams}
+    %    \resumeItem{Operation Infrastructure Solution}
+    %      {Built automated shipment tracking tool for the operation team, that reduces the time for printing shipment labels from hours to just a few minutes.}
+    %    \resumeItem{Website Development}
+    %    {Created website page for the subscription program, built APIs for user management and external software (Stripe, Shopify) integration, and maintained the company website. (AngularJS + Jekyll)}
+    %  \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {NUS Investment Club}{Singapore, Singapore}
+    %  {Executive Analyst}{June 2015 - Aug 2016}
+    %  \resumeItemListStart
+    %  \resumeItem{Fundamental Analysis Group}
+    %  {
+    %      Conducted market research for Asia's Real Estate market, Rubber Products market. Written equity research report for Riverstone Holding, and JD.com, and both hit price targets within 6 months.
+    %  }
+    %  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{项目研究}
+\resumeSubHeadingListStart
+    \resumeSubheadingSingle
+    {MOBA 游戏AI强化学习} {腾讯课题, 2020.05 （研一）}
+    \resumeItemListStart
+    \resumeLine{
+        DeepMind 在AlphaStar中使用了自注意力技术来对局部单位的关系特征做了提取，根据此技术来验证其在MOBA 游戏（如王者荣耀）AI中的效果。
+    }
+    \resumeItemListEnd
+    \resumeSubheadingSingle
+    {多体动态模拟}{课程项目, 2018.01 (大三）} 
+    \resumeItemListStart
+    \resumeLine{ 搭建了一个多体碰撞的模拟器，支持多种物体碰撞动态模拟方式。}
+    \resumeLine{ 使用OpenMPI来优化分布式信息传递，GNU GMP来优化高精度数学计算.}
+    \resumeItemListEnd
+
+
+    %\resumeSubItem{N-Body Simulation [\href{https://github.com/githubxxcc/n-body-simulation/tree/master/src}{Code}][\href{https://github.com/githubxxcc/n-body-simulation/blob/master/Report.pdf}{Report}]}
+    %\\{\vspace{8pt}}
+    %\resumeSubItem{Competitive Auction Research[\href{https://github.com/githubxxcc/project-reports/blob/master/Competitive_Auction_Summary.pdf}{Report1}] [\href{https://github.com/githubxxcc/project-reports/blob/master/Competitive_Auction_Extension.pdf}{Report2}]}
+    %\\{\vspace{8pt}The project summarizes the paper \textit{Competitive Auction} by Andrev V. Goldberge et al, and proposes extensions to the original paper.}
+    %\resumeSubItem{Device Fingerprinting for Web Applications[\href{https://github.com/cs3235-autoauth/report/blob/master/v1.paper.pdf}{Report}]}
+    %\\{\vspace{8pt} Conducted research in the device fingerprinting technology, in particular, its usage as a augmentation to the authentication process for web applications. Built a Web authentication workflow to demonstrate the use of device fingerprinting as a primary method for user authentication.}
+    %\resumeSubItem{Backoff Protocol Research [\href{https://github.com/githubxxcc/project-reports/blob/master/Backoff_Protocol.pdf}{Report}]}
+    %\\{\vspace{8pt}The experiment investigates the performance of various backoff protocols in contention resolution with different arrival models. By adding in a bit of randomization at various components of the protocol, one can share resources effectively.}
+
+
+    %\resumeSubheadingSingle
+    %{API World Hackathon, Best API Winnder} {Hackathon, Nov 2018}
+    %\resumeItemListStart
+    %\resumeLine{Built a bike-sharing application with the HyperTrack APIs, that has an Android mobile App with WebApp dashboard. Mainly in charge of dashboard development.}
+    %\resumeItemListEnd
+
+    \resumeSubheadingSingle
+    {MapReduce 框架 Golang}{课程项目, 2017.05 (大二)} 
+    \resumeItemListStart
+    \resumeLine{
+        用Go语言实现了MapReduce 框架，并完成PageRank，Inverted Index 等算法实现。
+    }
+    \resumeItemListEnd
+
+    % \resumeSubheadingSingle
+    % {PintOS}{Personal Project, April 2018} 
+    % \resumeItemListStart
+    % \resumeLine{Completed the first two phases of Stanford's Operation System class project individually. (Usually in a group of 4)}
+    % \resumeLine{Built Multilevel Queue (MLQ) scheduler, implemented system calls, implemented file descriptor managers (C).}
+    % \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+% \section{Programming Skills}
+%   \resumeSubHeadingListStart
+%     \item{
+%       \textbf{Languages}{: C++, Go, C, Rust, SQL,Javascript, Python, Java}
+%       \hfill
+%       \textbf{Technologies}{: Linux, PyTorch, AWS}
+%     }
+%   \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+% \section{Online Classes}
+%     \resumeSubHeadingListStart
+%      \item{
+%              \textbf{Design and Analysis of Algorithms}, MIT OpenCourseware, 80\% lectures and selected assignments.
+%     }
+%      \item{
+%              \textbf{Operating Systems}, Stanford Lecture Notes, all lectures and first half of the project.
+%     }
+%      \item{
+%              \textbf{Introduction to Database}, Stanford Online Lagunita.
+%     }
+%      \item{
+%              \textbf{Introduction to Computer Networking}, Stanford Online Lagunita.
+%     }
+%     \item{
+%             \textbf{Parallel, Concurrent, and Distributed Programming in Java}, Rice on Coursera, completed specialization
+%     }
+%     \item{
+%             \textbf{Advanced Javascript}, Udemy, completed class.
+%     }
+%     \item {
+%         \textbf{Cryptography I}, Stanford on Coursera, completed class.
+%     }
+%     \item {
+%         \textbf{Computer Systems Security}, MIT OpenCourseware, 80\% course lectures and first 2 labs.
+%     }
+%     \item {
+%         \textbf{Introduction to Classical Music}, Yale on Coursera, completed class.
+%     }
+%     \item {
+%         \textbf{Financial Market}, Yale on Coursera, completed class.
+%     }
+%     \item {
+%         \textbf{The Global Business of Sports}, UPenn on Coursera, completed class.
+%     }
+%     \item {
+%         \textbf{Machine Learning}, Stanford on Coursera, ongoing.
+%     }
+%     \resumeSubHeadingListEnd
+\end{document}
